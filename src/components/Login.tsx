@@ -1,5 +1,6 @@
 import './Login.css';
 import GoalList from './GoalDisplay';
+import AddGoal from './AddGoal';
 
 function Login() {
 
@@ -9,6 +10,7 @@ function Login() {
 
       <h1>My Goal Tracker</h1>
       <GoalList />
+      <AddGoal />
     </>
   );
 }
