@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+# Goal App (Client)
+A goal tracking app with gamified elements.  This repository is just the server.  To view the server, visit https://github.com/warnerjoe/goal-server.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Link to project:** TBD
 
-Currently, two official plugins are available:
+![Picture of App](http://placecorgi.com/1200/650)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How It's Made:
 
-## Expanding the ESLint configuration
+**Tech used:** Node, React, MongoDB, Express, Typescript, Jest
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+For this project, I used a Typescript based stack. I built an API server using NodeJS and MongoDB, using Express to do the routing.  I used unit testing for the entire process with Jest.
 
-- Configure the top-level `parserOptions` property like this:
+## Optimizations
+*(optional)*
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+To be determined.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Lessons Learned:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To be determined.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Examples:
+Take a look at these couple examples that I have in my own portfolio:
+
+**WrestleGPT:** [https://github.com/warnerjoe/WrestleGPT](https://github.com/warnerjoe/WrestleGPT)
+
+**Employee Error Reporter:** [https://github.com/warnerjoe/employee-error-reporter](https://github.com/warnerjoe/employee-error-reporter)
+
+**Node Portfolio:** [https://github.com/warnerjoe/nodeportfolio](https://github.com/warnerjoe/nodeportfolio)
+
+**RDDB:** [https://github.com/warnerjoe/rddb-2/](https://github.com/warnerjoe/rddb-2)
