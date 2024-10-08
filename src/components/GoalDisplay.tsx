@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import GoalCard from './GoalCard';
 
 // Define the structure of a Goal
 interface Goal {
-  id: string;  // Adjust type according to your API response
+  _id: string; // Adjust type according to your API response
   title: string; // Adjust type according to your API response
+  completed: boolean;
 }
 
 const GoalList: React.FC = () => {
@@ -47,7 +49,7 @@ const GoalList: React.FC = () => {
       <h2>Goals List</h2>
       <ul>
         {goals.map((goal) => (
-          <li key={goal.id}>{goal.title}</li> // Assuming each goal has an 'id' and 'title'
+          <GoalCard key={goal._id} goal={goal} />
         ))}
       </ul>
     </div>
